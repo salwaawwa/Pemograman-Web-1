@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cart</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 100%;
+        }
+
+        #header {
+            height: 10%;
+            background: #DDDDDD;
+            /* display: flex;
+            justify-content: space-around; */
+        }
+
+        #content {
+            height: 80%;
+            background: white;
+        }
+
+        #footer {
+            height: 10%;
+            background: white;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        hr {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div style="float: left; padding: 25px 0 25px 50px;">
+                <div style="float: left;">
+                    <font size="4"><a href="https://shopee.co.id/" target="_blank">Site Name</a></font>
+                </div>
+                <div style="float: right; margin-left: 30px;">
+                    <font size="4">
+                        <a href="https://shopee.co.id/search?keyword=sepatu%20wanita" target="_blank">Sepatu Wanita</a>
+                        |
+                        <a href="https://shopee.co.id/search?keyword=tas%20wanita" target="_blank">Tas Wanita</a> |
+                        <a href="https://shopee.co.id/search?keyword=kemeja%20wanita" target="_blank">Kemeja Wanita</a>
+                    </font>
+                </div>
+            </div>
+            <div style="float: right; padding: 25px 50px 25px 0;">
+                <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+                <i class="fa-solid fa-lg fa-cart-shopping"></i> <b>Cart (1)</b>
+            </div>
+        </div>
+
+        <div id="content">
+            <hr>
+
+            <div class="float-left" style="width: 50%; margin: 50px 0 0 150px;">
+                <h3>Your Cart</h3>
+
+                <table width="700px">
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <th width="300px">Item</th>
+                        <th width="200px">Price</th>
+                        <th width="200px">Quantity</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/kemejaPerempuan.png" alt="Kemeja Perempuan" height="100px"
+                                class="float-left" style="margin: 10px 10px 10px 0;">
+                            <div style="margin: 35px 0;">
+                                <small>BELOUSE WANITA <br>Size: Small</small>
+                            </div>
+                        </td>
+                        <td>
+                            <b>$20.00</b>
+                        </td>
+                        <td>
+                            <input type="number" value="1" style="width: 40px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>Subtotal: <b>$20.00</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="float-right" style="background-color: #DDDDDD; margin: 50px 150px 0 0; padding: 10px;">
+                <b>Summary (1 item)</b>
+                <table width="250px" style="margin-top: 10px;">
+                    <tr>
+                        <td width="125px">Subtotal</td>
+                        <td width="125px" align="right">$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td align="right">-</td>
+                    </tr>
+                    <tr>
+                        <td>Est. Taxes</td>
+                        <td align="right">-</td>
+                    </tr>
+                </table>
+
+                <hr color="white" style="margin: 10px 0;" />
+
+                <table width="250px">
+                    <tr>
+                        <th width="125px" align="left">Total</th>
+                        <th width="125px" align="right">$23.60</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button style="background-color: #2B78E4; color: white; width: 100%;">Checkout</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <hr>
+
+            <div class="float-left" style="padding: 10px 0 0 50px;">
+                <div class="float-left"><a href="https://shopee.co.id/" target="_blank">Site Name</a></div>
+                <div class="float-right" style="margin-left: 30px;">
+                    <a href="https://shopee.co.id/search?keyword=sepatu%20wanita" target="_blank">Sepatu Wanita</a> |
+                    <a href="https://shopee.co.id/search?keyword=tas%20wanita" target="_blank">Tas Wanita</a> |
+                    <a href="https://shopee.co.id/search?keyword=kemeja%20wanita" target="_blank">Kemeja Wanita</a>
+                </div>
+
+                <div style="margin: 25px 0 0 0">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa fa-credit-card"></i>
+                </div>
+            </div>
+            <div class="float-right" style="padding: 10px 50px 0 0;">
+                Stay In Touch! Join our Newsletter <br>
+                <input type="text" placeholder="Enter Email"> <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dbae32b024.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
