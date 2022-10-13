@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+
+<body>
+    <form>
+        <table align="center" width="1000px" cellspacing="8">
+            <thead>
+                <tr>
+                    <th width="200px">Home</th>
+                    <th>|</th>
+                    <th width="200px">Generate Link</th>
+                    <th>|</th>
+                    <th width="200px">Transaction History</th>
+                    <th>|</th>
+                    <th width="200px">Policy</th>
+                    <th>|</th>
+                    <th width="200px">Logout</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="9">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" rowspan="6" align="center">
+                        <img src="asset/images/macbook.jpg" alt="MacBook Air" width="300px">
+                        <button style="margin-top: 10px;">Upload Picture</button>
+                    </td>
+                    <td>
+                        <label for="title">Title Here</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input size="50" type="text" name="title" id="title" value="MacBook Air E800">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="description">Description</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <textarea name="description" id="description" cols="48" rows="7">Year : 2009</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="accountNumber">Account Number</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input size="50" type="text" name="accountNumber" id="accountNumber" value="123-456-789-0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bank">Bank</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <select name="bank" id="bank" style="width: 370px;">
+                            <option value="bca">BCA</option>
+                            <option value="hsbc" selected>HSBC</option>
+                            <option value="bni">BNI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="accountHolder">Account Holder</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input size="50" type="text" name="accountHolder" id="accountHolder"
+                            value="Salwa Az-Zahra Munir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="transaction">Transaction</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input style="width: 50px;" type="number" value="1" name="transaction" id="transaction">
+                        <br>
+                        <small style="color: red;">* if the transaction is for 3 person, choose 3 from the drop-down
+                            list</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" rowspan="6"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="3">
+                        <input size="50" type="checkbox" name="" id="" checked>
+                        <label for="">Send to Mobile Phone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="3">
+                        <input size="50" type="checkbox" name="" id="" checked>
+                        <label for="">Send to Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sendMobile">Send to Mobile Phone</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input size="50" type="text" name="sendMobile" id="sendMobile" value="1234567890, 1234567891">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sendEmail">Send to Email</label>
+                    </td>
+                    <td>:</td>
+                    <td colspan="3">
+                        <input size="50" type="text" name="sendEmail" id="sendEmail"
+                            value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="3">
+                        <button type="submit">Generate Nabr Link</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
