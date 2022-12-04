@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas & Keliling Lingkaran</title>
+</head>
+
+<body>
+
+    <span id="phi"></span>
+    <br>
+    <span id="jari"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span>
+
+    <script>
+        const phi = 3.14
+        let jari = 14
+        let luasLingkaran = phi * (jari * jari)
+        console.log(`Hasil Luas Lingkaran : ${luasLingkaran}`);
+        let KelilingLingkaran = phi * (2 * jari)
+        console.log(`Hasil Keliling Lingkaran : ${KelilingLingkaran}`);
+
+        document.getElementById('phi').innerHTML = `Nilai PHI : ${phi}`
+        document.getElementById('jari').innerHTML = `Nilai Jari : ${jari}`
+        document.getElementById('luas').innerHTML = `Hasil Luas Lingkaran : ${luasLingkaran}`
+        document.getElementById('keliling').innerHTML = `Hasil Keliling Lingkaran : ${KelilingLingkaran}`
+    </script>
+</body>
+
+</html>
