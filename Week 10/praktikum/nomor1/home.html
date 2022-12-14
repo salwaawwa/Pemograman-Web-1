@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Login Sukses</h1>
+    <button id="btn-logout">Logout</button>
+
+    <script>
+        document.getElementById('btn-logout').addEventListener('click', logout)
+
+        function logout(event) {
+            event.preventDefault()
+            let text = "sure you want to logout ??";
+            if (confirm(text) == true) {
+                document.location.href = "login.html";
+                alert("successful logout")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

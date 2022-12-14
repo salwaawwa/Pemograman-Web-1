@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna</title>
+</head>
+
+<body id="id1">
+    <form>
+        <input type="button" value="Ubah Warna" onclick="ubahWarna()">
+    </form>
+
+    <script>
+        function ubahWarna() {
+            let random = Math.round(Math.random() * 10)
+            let colors = ["beige", "cyan", "yellow", "pink", "green", "blue", "red", "azure", "gold", "gray", "purple"]
+
+            document.getElementById('id1').style = `background-color: ${colors[random]}`
+        }
+    </script>
+</body>
+
+</html>
