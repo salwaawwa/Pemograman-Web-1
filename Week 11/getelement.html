@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Belajar DOM Javascript</h1>
+    <div id="box">
+
+    </div>
+    <div class="boks">
+
+    </div>
+    <div class="boks">
+
+    </div>
+    <div class="boks">
+
+    </div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        let box = document.getElementById('box');
+        box.innerHTML = "Document Object Model JS"
+
+        //akses class
+        let boks = document.getElementsByClassName("boks");
+        boks[0].innerHTML = "ayam";
+        boks[1].innerHTML = "kucing";
+        boks[2].innerHTML = "kambing";
+
+
+        //ambil elemen selector
+        let li = document.getElementsByTagName("li");
+        li[0].innerHTML = "Boostrap";
+        li[1].innerHTML = "PHP";
+        li[2].innerHTML = "PYTHON";
+    </script>
+</body>
+
+</html>
