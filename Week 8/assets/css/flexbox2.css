@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    /* menempati ruang kosong di container body */
+}
+
+header, footer {
+    background: yellow;
+    height: 20vh;
+}
+
+#main > article {
+    flex: 1;
+    order: 1;
+}
+
+#main > article
+#main > aside {
+    flex: 0 0 20vw;
+}
+
+#main > aside {
+    background: aqua;
+    order: 2;
+}
+
+#main > nav {
+    background: yellowgreen;
+    order: 3;
+}
+
+header, footer, article, aside, nav {
+    padding: 1em;
+}
